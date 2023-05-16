@@ -5,7 +5,7 @@
 , pkgsHostHost
 , autoPatchelfHook ? null
 , libedit ? null
-, libxcrypt-legacy ? null
+, libxcrypt ? null
 , ncurses5 ? null
 , openssl ? null
 , sqlite ? null
@@ -14,7 +14,7 @@
 }:
 
 assert stdenv.isLinux -> autoPatchelfHook != null;
-assert stdenv.isLinux -> libxcrypt-legacy != null;
+assert stdenv.isLinux -> libxcrypt != null;
 assert stdenv.isLinux -> ncurses5 != null;
 assert stdenv.isLinux -> zlib != null;
 
@@ -57,7 +57,7 @@ let
     ];
 
     buildInputs = lib.optionals stdenv.isLinux ([
-      libxcrypt-legacy
+      libxcrypt
       ncurses5
       stdenv.cc.cc.lib
       zlib
