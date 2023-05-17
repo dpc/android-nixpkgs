@@ -22,4 +22,4 @@ in
   inherit (builtins.trace src src) url;
   sha1 = if builtins.hasAttr "sha1" src then src.sha1 else null;
   sha256 = if builtins.hasAttr "sha256" src then src.sha256 else null;
-} // removeAttrs args [ "sources" ]))
+} // removeAttrs (builtins.trace args args) [ "sources" ]))
