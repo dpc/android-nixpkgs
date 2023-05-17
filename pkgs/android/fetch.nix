@@ -19,5 +19,7 @@ let
 
 in
 (fetchurl ({
-  inherit (src) url sha1;
+  inherit (src) url;
+  sha1 = if builtins.hasAttr "sha1" src then src.sha1 else null;
+  sha256 = if builtins.hasAttr "sha256" src then src.sha256 else null;
 } // removeAttrs args [ "sources" ]))
