@@ -3909,7 +3909,7 @@
       };
       linux = {
         url = "https://dl.google.com/android/repository/platform-tools_r34.0.1-linux.zip";
-        sha1 = "7e8f205a0cfe574ffecb6ec41e6496f5328211fd";
+        sha1 = "40f24dc4f2baf911ccb2a53c14bfb69fb8088c57";
       };
       windows = {
         url = "https://dl.google.com/android/repository/platform-tools_r34.0.1-windows.zip";
