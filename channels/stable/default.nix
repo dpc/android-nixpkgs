@@ -7797,7 +7797,7 @@
     sources = {
       all = {
         url = "https://dl.google.com/android/repository/sys-img/google_apis/arm64-v8a-32_r06.zip";
-        sha1 = "f64546f7cfcd751d89c8b7799d444676b217c623";
+        sha1 = "9e97d7ecd5b6cb9d9141bcbaaec134820ac569e1";
       };
     };
     displayName = "Google APIs ARM 64 v8a System Image";
